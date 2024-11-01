@@ -10,14 +10,9 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        // Cambia el nombre del archivo FXML a "DASHBOAR-TERAPEUTA-PACIENTE.fxml"
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DASHBOAR-TERAPEUTA-PACIENTE.fxml"));
-
-        // Ajusta el tamaño de la ventana según lo que necesitas para la vista
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
-
-        // Cambia el título de la ventana
-        stage.setTitle("Vista de Pacientes");
+        stage.setTitle("Aplicación de Citas");
         stage.setScene(scene);
         stage.show();
     }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.proyectocitas.MainController" prefHeight="800.0" prefWidth="1200.0">
+
+    <!-- Barra lateral -->
+    <VBox prefWidth="250.0" spacing="20" style="-fx-background-color: #F5F5F5;" AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <ImageView fx:id="logoImageView" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true"
+                   style="-fx-margin-bottom: 20px;" />
+        <Label text="Menu" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+        <Button fx:id="pacientesButton" style="-fx-background-color: transparent; -fx-text-fill: #5E4B96;" text="Pacientes"
+                onAction="#handlePacientes">
+            <graphic>
+                <ImageView fx:id="pacientesIcon" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+
+        <Button fx:id="citasButton" style="-fx-background-color: transparent; -fx-text-fill: #5E4B96;" text="Citas"
+                onAction="#handleCitas">
+            <graphic>
+                <ImageView fx:id="citasIcon" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+
+        <Button fx:id="exportarButton" style="-fx-background-color: transparent; -fx-text-fill: #5E4B96;" text="Exportar"
+                onAction="#handleExportar">
+            <graphic>
+                <ImageView fx:id="exportarIcon" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
+            </graphic>
+        </Button>
+    </VBox>
+
+    <!-- Panel Principal -->
+    <StackPane fx:id="contentPane" prefWidth="950.0" prefHeight="800.0" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="250.0"
+               AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+</AnchorPane>
