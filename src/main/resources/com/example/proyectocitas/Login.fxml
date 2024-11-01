@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #E08283;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="50.0" layoutY="150.0" text="Usuario:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <style>
+            -fx-text-fill: white;
+         </style>
+      </Label>
+      <TextField fx:id="emailTextField" layoutX="150.0" layoutY="150.0" promptText="Usuario" style="-fx-background-radius: 15; -fx-padding: 5px;" />
+      <Label layoutX="50.0" layoutY="220.0" text="Password:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <style>
+            -fx-text-fill: white;
+         </style>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="150.0" layoutY="220.0" promptText="Password" style="-fx-background-radius: 15; -fx-padding: 5px;" />
+      <Button fx:id="loginButton" layoutX="150.0" layoutY="300.0" style="-fx-background-color: #1F3A93; -fx-text-fill: WHITE; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 15;" text="LOGIN">
+         <effect>
+            <DropShadow color="#000000" offsetX="4.0" offsetY="4.0" radius="10.0" />
+         </effect>
+      </Button>
+      <Label layoutX="80.0" layoutY="370.0" style="-fx-font-size: 16px; -fx-text-fill: white; -fx-padding: 10px;" text="¿Usted es Terapeuta?" />
+      <Button fx:id="terapeutaButton" layoutX="64.0" layoutY="430.0" style="-fx-background-color: #22A7F0; -fx-text-fill: WHITE; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 15;" text="Registrarse como Terapeuta">
+         <effect>
+            <DropShadow color="#000000" offsetX="2.0" offsetY="2.0" radius="5.0" />
+         </effect>
+      </Button>
+      <Pane layoutX="331.0" prefHeight="700.0" prefWidth="669.0" style="-fx-background-color: #40E0D0;">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="182.0" layoutX="231.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

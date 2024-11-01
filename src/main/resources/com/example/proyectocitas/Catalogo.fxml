@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.proyectocitas.Catalogo"
+            prefHeight="800.0" prefWidth="1000.0">
+    <children>
+        <!-- Sidebar Navigation -->
+        <VBox layoutX="0.0" layoutY="0.0" prefHeight="800.0" prefWidth="200.0" style="-fx-background-color: #1E1E2F;">
+            <children>
+                <Label text="GM" style="-fx-text-fill: #FFFFFF; -fx-font-size: 18px; -fx-padding: 20px;" />
+                <Button text="Home" style="-fx-background-color: transparent; -fx-text-fill: #FFFFFF; -fx-font-size: 16px; -fx-padding: 15px;" />
+            </children>
+        </VBox>
+
+        <!-- Main Content Area -->
+        <VBox layoutX="220.0" layoutY="20.0" prefWidth="760.0" style="-fx-background-color: #F0F0F0; -fx-padding: 20px;">
+            <children>
+                <Label text="Catálogo de Citas Terapéuticas y Médicas" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #2C3E50;" />
+
+                <!-- Sections for Different Consultation Types -->
+                <GridPane hgap="20.0" vgap="20.0" style="-fx-padding: 10px;">
+                    <children>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Médico General" style="-fx-background-color: #3498DB; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Cardiología" style="-fx-background-color: #E74C3C; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Psicología" style="-fx-background-color: #8E44AD; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Pediatría" style="-fx-background-color: #27AE60; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Endocrinología" style="-fx-background-color: #2980B9; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Nutricionista" style="-fx-background-color: #16A085; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Dermatología" style="-fx-background-color: #F39C12; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Fisioterapia" style="-fx-background-color: #9B59B6; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Urología" style="-fx-background-color: #e67e22; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Ginecología" style="-fx-background-color: #d35400; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Oftalmología" style="-fx-background-color: #2ecc71; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Button text="Cita Neurología" style="-fx-background-color: #e74c3c; -fx-text-fill: WHITE; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 10;" prefWidth="200.0" prefHeight="100.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

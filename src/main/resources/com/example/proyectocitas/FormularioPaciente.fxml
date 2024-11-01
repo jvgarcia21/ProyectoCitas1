@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.proyectocitas.FormularioPaciente"
+            prefHeight="600.0" prefWidth="600.0"
+            style="-fx-background-color: linear-gradient(to bottom, #F0F0F0, #D9D9D9);">
+    <children>
+        <Label layoutX="50.0" layoutY="20.0" text="Agregar Paciente" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2C3E50; -fx-effect: dropshadow(gaussian, #000000, 4, 0.5, 2, 2);" />
+
+        <Label layoutX="50.0" layoutY="80.0" text="Nombre:" style="-fx-font-size: 16px; -fx-text-fill: #2C3E50;" />
+        <TextField fx:id="nombreTextField" layoutX="150.0" layoutY="80.0" prefWidth="350.0" promptText="Ingrese el nombre del paciente" style="-fx-background-radius: 10; -fx-padding: 10px; -fx-border-color: #3A539B; -fx-border-width: 1;" />
+
+        <Label layoutX="50.0" layoutY="130.0" text="Teléfono:" style="-fx-font-size: 16px; -fx-text-fill: #2C3E50;" />
+        <TextField fx:id="telefonoTextField" layoutX="150.0" layoutY="130.0" prefWidth="350.0" promptText="Ingrese el teléfono del paciente" style="-fx-background-radius: 10; -fx-padding: 10px; -fx-border-color: #3A539B; -fx-border-width: 1;" />
+
+        <Label layoutX="50.0" layoutY="180.0" text="Correo Electrónico:" style="-fx-font-size: 16px; -fx-text-fill: #2C3E50;" />
+        <TextField fx:id="correoTextField" layoutX="150.0" layoutY="180.0" prefWidth="350.0" promptText="Ingrese el correo electrónico del paciente" style="-fx-background-radius: 10; -fx-padding: 10px; -fx-border-color: #3A539B; -fx-border-width: 1;" />
+
+        <Label layoutX="50.0" layoutY="230.0" text="Fecha de Nacimiento:" style="-fx-font-size: 16px; -fx-text-fill: #2C3E50;" />
+        <DatePicker fx:id="fechaNacimientoPicker" layoutX="150.0" layoutY="230.0" style="-fx-background-radius: 10; -fx-padding: 10px; -fx-border-color: #3A539B; -fx-border-width: 1;" />
+
+        <Label layoutX="50.0" layoutY="280.0" text="Dirección:" style="-fx-font-size: 16px; -fx-text-fill: #2C3E50;" />
+        <TextField fx:id="direccionTextField" layoutX="150.0" layoutY="280.0" prefWidth="350.0" promptText="Ingrese la dirección del paciente" style="-fx-background-radius: 10; -fx-padding: 10px; -fx-border-color: #3A539B; -fx-border-width: 1;" />
+
+        <Button fx:id="guardarButton" layoutX="150.0" layoutY="350.0" text="Guardar" style="-fx-background-color: linear-gradient(to bottom, #3A539B, #1F4788); -fx-text-fill: WHITE; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10;">
+            <effect>
+                <DropShadow color="#000000" offsetX="3.0" offsetY="3.0" radius="8.0" />
+            </effect>
+        </Button>
+
+        <Button fx:id="cancelarButton" layoutX="300.0" layoutY="350.0" text="Cancelar" style="-fx-background-color: linear-gradient(to bottom, #D64541, #96281B); -fx-text-fill: WHITE; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10;">
+            <effect>
+                <DropShadow color="#000000" offsetX="3.0" offsetY="3.0" radius="8.0" />
+            </effect>
+        </Button>
+    </children>
+</AnchorPane>
